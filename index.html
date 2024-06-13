@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<!-- Mirrored from localhost:7026/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jun 2024 19:06:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <script src="assets/js/color-modes.html"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Home Page - spotify</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/sitef129.css?v=UcThRPTt9obHANXDRtu6LL98uH3xLJAGK-AJPatNSqY" />
+    <link rel="stylesheet" href="spotify.styles72b4.css?v=bhRWvgaRvOsHCr0L_RjccPjg2pi2_3B0Pb1uAv1vVDU" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+
+
+
+    <link href="assets/dist/css/bootstrap.min.html" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        (min-width: 768px) {
+            .bd-placeholder-img-lg
+
+        {
+            font-size: 3.5rem;
+        }
+
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+            .bd-mode-toggle .dropdown-menu .active .bi {
+                display: block !important;
+            }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.html" rel="stylesheet">
+</head>
+<body>
+    <svg b-yc58o0d9at xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol b-yc58o0d9at id="check2" viewBox="0 0 16 16">
+            <path b-yc58o0d9at d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol b-yc58o0d9at id="circle-half" viewBox="0 0 16 16">
+            <path b-yc58o0d9at d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol b-yc58o0d9at id="moon-stars-fill" viewBox="0 0 16 16">
+            <path b-yc58o0d9at d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path b-yc58o0d9at d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol b-yc58o0d9at id="sun-fill" viewBox="0 0 16 16">
+            <path b-yc58o0d9at d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
+
+    <div b-yc58o0d9at class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button b-yc58o0d9at class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+                id="bd-theme"
+                type="button"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                aria-label="Toggle theme (auto)">
+            <svg b-yc58o0d9at class="bi my-1 theme-icon-active" width="1em" height="1em"><use b-yc58o0d9at href="#circle-half"></use></svg>
+            <span b-yc58o0d9at class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul b-yc58o0d9at class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li b-yc58o0d9at>
+                <button b-yc58o0d9at type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                    <svg b-yc58o0d9at class="bi me-2 opacity-50" width="1em" height="1em"><use b-yc58o0d9at href="#sun-fill"></use></svg>
+                    Light
+                    <svg b-yc58o0d9at class="bi ms-auto d-none" width="1em" height="1em"><use b-yc58o0d9at href="#check2"></use></svg>
+                </button>
+            </li>
+            <li b-yc58o0d9at>
+                <button b-yc58o0d9at type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                    <svg b-yc58o0d9at class="bi me-2 opacity-50" width="1em" height="1em"><use b-yc58o0d9at href="#moon-stars-fill"></use></svg>
+                    Dark
+                    <svg b-yc58o0d9at class="bi ms-auto d-none" width="1em" height="1em"><use b-yc58o0d9at href="#check2"></use></svg>
+                </button>
+            </li>
+            <li b-yc58o0d9at>
+                <button b-yc58o0d9at type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                    <svg b-yc58o0d9at class="bi me-2 opacity-50" width="1em" height="1em"><use b-yc58o0d9at href="#circle-half"></use></svg>
+                    Auto
+                    <svg b-yc58o0d9at class="bi ms-auto d-none" width="1em" height="1em"><use b-yc58o0d9at href="#check2"></use></svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <iframe b-yc58o0d9at style="border-radius:12px" src="https://open.spotify.com/embed/track/4mn2kNTqiGLwaUR8JdhJ1l?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <header b-yc58o0d9at data-bs-theme="dark">
+        <nav b-yc58o0d9at class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div b-yc58o0d9at class="container-fluid">
+                <a b-yc58o0d9at class="navbar-brand" href="#">Profile</a>
+                <button b-yc58o0d9at class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span b-yc58o0d9at class="navbar-toggler-icon"></span>
+                 </button>
+                <!--<div class="collapse navbar-collapse" id="navbarCollapse">
+                   <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    </div> b-yc58o0d9at-->
+            </div>
+        </nav>
+    </header>
+     <!DOCTYPE html>
+
+            
+<main>
+
+  
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1Ziym4?utm_source=generator" width="252" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <h2 class="fw-normal"><a href="https://open.spotify.com/playlist/0Vx5YXfDOuEf9e97RLQnrN"  class="btn btn-outline-warning">About me</a></h2>
+                    <p>I'm a developer, I love summer, the beach, I love music from the 80s, 90s and usually even the 2000s.</p>
+        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6fE5Yb2rQljulnXqj7yviy?utm_source=generator" width="252" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <h2 class="fw-normal"> <a href="https://linktr.ee/kassiaalbuquerque?utm_source=linktree_profile_share&amp;ltsid=ab4af995-fc1b-4500-a353-d33c14dc608d"> <button type="button" class="btn btn-outline-warning">Career</button></a></h2>
+                    <p> .Net, c#, Javascript, SQL, HTML, CSS</p>
+       
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6foRq6sWqo2FVssXE0VtvC?utm_source=generator" width="252" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <h2 class="fw-normal"><a href="https://github.com/wendyalbuquerque"> <button type="button" class="btn btn-outline-warning">GitHub</button</a></h2>
+                   
+        
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+   
+    <!-- /END THE FEATURETTES -->
+
+  
+</main>
+
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.html"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="js/sited52e.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo"></script>
+    
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="34000253a71849f0a78a16d662898ce3" data-requestMappingFromServer="false" data-connectUrl="http://localhost:57354/03aff6abe86643a5addfee4f35ca8148/browserLink"></script>
+<!-- End Browser Link -->
+<script src="_framework/aspnetcore-browser-refresh.js"></script></body>
+
+<!-- Mirrored from localhost:7026/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jun 2024 19:06:26 GMT -->
+</html>
+
